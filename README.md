@@ -6,6 +6,7 @@
 Welcome to my page! I hope your stay so you can learn more about me! I spent a lot of time making it nice just for you! Stay as long as you like. 
 
 **Author**: Angela Dzodzomenyo
+
 *Links and Resources*
 * submission PR
 * Any Links you used as reference
