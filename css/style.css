@@ -1,0 +1,41 @@
+/* do any styling that will apply to the entire document
+do styling on all text
+work from top to bottom by section/element */
+
+h1 {
+  font-size: 3em;
+  border: thick dotted darkseagreen
+}
+
+h2 {
+  font-size: 2em;
+  color:rgb(153, 88, 23)
+}
+
+h3 {
+  font-size: 1.5em;
+  color:rgb(153, 88, 23)
+}
+
+header {
+  background-color: cornflowerblue;
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(153, 88, 23)
+}
+
+main {
+  background-color: rgb(211, 131, 51);
+  padding: 20px;
+}
+
+section, footer {
+  border: thick dotted darkseagreen;
+  margin: 20px 10px;
+  padding: 10px;
+  background-color: cornflowerblue;
+}
+
+img {
+  width: 200px;
+  display: block;
+}
