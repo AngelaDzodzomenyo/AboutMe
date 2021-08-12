@@ -8,7 +8,7 @@ function uName(){
   console.log('The userName is ' + userName);
       alert('Hi '+userName + '! Welcome to my page!');
   }
-  uName();
+uName();
   
 function uName_2(){
   let userName_2 = prompt('Well, '+userName +', my favorite number is 2 and my favorite color is green. Do you like the color green?');
@@ -28,8 +28,6 @@ function uName_2(){
       alert('ok...lets keep going')
   }
 }
-  
-
 uName_2();
 
 function favoriteNumber(){
@@ -65,43 +63,43 @@ function gHana(){
     } else {
       alert('Lets move on...')
     }
-  }
-  gHana();
+}
+gHana();
 
 
-  function likeCats(){
-    let catGame = prompt('I like cats. Do you?')
+function likeCats(){
+  let catGame = prompt('I like cats. Do you?')
     console.log(typeof catGame);
-    let catGame_2 = catGame.toLowerCase();
+  let catGame_2 = catGame.toLowerCase();
     console.log(catGame_2)
     
-      if (catGame_2 === 'yes' || catGame_2 === 'y') {
-        alert('Right! They are so soft and cuddly! '+userName+ '!')
-        finalCountDown++;
-      } else if (catGame_2 === 'no' || catGame_2 === 'n') {
-        alert('Yes you do!');
-      } else {
-        alert('Meow?')
-      }
-    }
-    likeCats();
+  if (catGame_2 === 'yes' || catGame_2 === 'y') {
+    alert('Right! They are so soft and cuddly! '+userName+ '!')
+    finalCountDown++;
+  } else if (catGame_2 === 'no' || catGame_2 === 'n') {
+    alert('Yes you do!');
+  } else {
+    alert('Meow?')
+  }
+}
+likeCats();
     
-    function seeClown(){
-    let clownGame = prompt('Want to see a clown?')
+function seeClown(){
+  let clownGame = prompt('Want to see a clown?')
     console.log(typeof clownGame);
-    let clownGame_2 = clownGame.toLowerCase();
+  let clownGame_2 = clownGame.toLowerCase();
     console.log(clownGame_2)
     
-      if (clownGame_2 === 'yes' || clownGame_2 === 'y') {
-        alert('Look in the mirror! :P')
-        finalCountDown++;
-      } else if (clownGame_2 === 'no' || clownGame_2 === 'n') {
-        alert('Thanks ok! Just look in the mirror!');
-      } else {
-        alert('....')
-      }
-    }
-    seeClown();
+  if (clownGame_2 === 'yes' || clownGame_2 === 'y') {
+    alert('Look in the mirror! :P')
+    finalCountDown++;
+  } else if (clownGame_2 === 'no' || clownGame_2 === 'n') {
+    alert('Thanks ok! Just look in the mirror!');
+  } else {
+    alert('....')
+  }
+}
+seeClown();
 
 // Accept a user input between 1 and 100
 // If incorrect, let user know too high or too low
@@ -114,10 +112,10 @@ function rngNumb(){
   let tries = 4;
   let randomNumber = Math.floor(Math.random() * 100 + 1);
   
-  while (userGuess !== randomNumber){
-    var userGuess = prompt('Im thinking of a number up to 100. Can you guess it? You only have ' + tries + ' tries!');
-    tries--;
-    nums++;
+while (userGuess !== randomNumber){
+  var userGuess = prompt('Im thinking of a number up to 100. Can you guess it? You only have ' + tries + ' tries!');
+  tries--;
+  nums++;
   
     if ((userGuess !== randomNumber) && (nums === 4)) {
       alert('Sorry! No more guesses! The correct number is '+ randomNumber + '!');
