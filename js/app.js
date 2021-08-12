@@ -55,7 +55,7 @@ console.log(catGame_2)
 if (catGame_2 === 'yes' || catGame_2 === 'y') {
   alert('Right! They are so soft and cuddly! '+userName+ '!')
 } else if (catGame_2 === 'no' || catGame_2 === 'n') {
-  alert('Yes you do!');
+  alert('Stop kidding yourself!');
 } else {
   alert('Meow?')
 }
@@ -74,4 +74,79 @@ if (clownGame_2 === 'yes' || clownGame_2 === 'y') {
   alert('....')
 }
 
-let alertuserName_2 = alert('Thanks ' +userName + ' for visiting! Stay a while!');
+// Accept a user input between 1 and 100
+// If incorrect, let user know too high or too low
+// Repeat if has not provided a correct answer or four tries have not been made
+// Notify of too high or too low if the answer was not correct
+// Exit loop if answer is correct
+
+let userGuess;
+let correctNumber = 17;
+let tries = 0;
+let intNumGuess;
+
+while (intNumGuess !== correctNumber && tries < 4) {
+  userGuess = prompt('Im thinking of a number up to 100. Can you guess it? You only have 4 tries!');
+  intNumGuess = parseInt(userGuess)
+  tries++
+  if ( intNumGuess !== correctNumber) {
+    if (intNumGuess > correctNumber) {
+      alert('Too high! Try again.')
+    } else {
+      alert('Too Low! Try again.')
+    }
+  }
+}
+
+
+if (intNumGuess === correctNumber) {
+  alert('Well done!');
+} else if (intNumGuess !== correctNumber) {
+  alert('Sorry! No more guesses! The correct number is '+correctNumber + '!')
+}
+
+
+
+
+
+
+
+
+var insects = [
+  'spiders',
+  'roaches',
+  'moths'
+]
+
+// // This retrieves Bugs
+// insects[0];
+
+let isCorrectGuess = false
+let userBugGuess;
+let bugTries = 0;
+let correctAnswers;  
+
+
+while (isCorrectGuess !== true && bugTries < 6) {
+userBugGuess = prompt('Guess one of the three most terrifying insects to me.');
+bugTries++
+  for (var i = 0; i < insects.length; i++ ) {
+    if (insects[i] === userBugGuess) {
+     isCorrectGuess = true 
+    }
+    if (!correctAnswers) {
+      correctAnswers = insects[i] + " "
+    } else if (bugTries === 1) {
+      correctAnswers = correctAnswers + insects[i] + " "  
+    }
+  }
+}
+
+
+if (isCorrectGuess) {
+alert('Correct! I hate ' + correctAnswers);
+} else {
+  alert('Sorry! But I hate ' + correctAnswers);
+}
+
+let alertuserName_2 = alert('Thanks' +userName + ' for visiting! Stay a while!')
